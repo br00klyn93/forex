@@ -3,3 +3,4 @@ requests
 gunicorn
 flask-cors
 telegram
+python-telegram-bot
