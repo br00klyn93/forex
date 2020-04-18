@@ -1,6 +1,7 @@
+import telegram
+
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
-import logging
 from telegram.ext import MessageHandler, Filters
 
 from flask import Flask
@@ -9,6 +10,7 @@ from flask_cors import CORS
 from datetime import datetime
 
 import requests
+import logging
 
 app = Flask(__name__)
 CORS(app)
