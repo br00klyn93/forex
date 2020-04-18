@@ -37,10 +37,10 @@ def start(update, context):
 
 @app.route('/')
 def main():
-    start_handler = CommandHandler('start', start)
-    dispatcher.add_handler(start_handler)
-    updater.start_polling()
-    return 'Bot Initialized.'
+    #start_handler = CommandHandler('start', start)
+   # dispatcher.add_handler(start_handler)
+    #updater.start_polling()
+    return 'Bot Oflline.'
 
 def echo(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
